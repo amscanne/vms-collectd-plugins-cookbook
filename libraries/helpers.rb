@@ -9,8 +9,8 @@ module Gridcentric
   module Helpers
     def vms_collectd_plugins_repo
       return [ node["vms"]["repo"]["url"].chomp("/"),
-               "public",
-               "vms-collectd-plugins",
+               "collectd-plugins",
+               "vms",
                "ubuntu"
              ].join("/")
     end
